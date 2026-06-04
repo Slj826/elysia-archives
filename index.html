@@ -20,7 +20,9 @@
 </style>
 </head>
 
-<body>
+<body oncopy="return false"
+      oncut="return false"
+      onpaste="return false">
 
 <header>
 
@@ -129,40 +131,64 @@
 <a href="yuyou.html" class="character-link">
 <div class="character-card">
     <div class="image-wrapper">
-        <img src="A.png" alt="寓幽">
-    </div>
+
+    <img src="A.png" alt="寓幽">
+
+    <div class="watermark">
+        ✦ @ Sljin ✦
+        </div>
+
+</div>
     <h3>寓幽</h3>
 </div>
 
 </a>
 
 <!-- 角色卡 2 -->
-<a href="quanxian.html" class="character-link">
+<a href=".png" class="character-link">
 <div class="character-card">
     <div class="image-wrapper">
-        <img src="B.png" alt="泉先">
-    </div>
+
+    <img src="B.png" alt="泉先">
+
+    <div class="watermark">
+        ✦ @ Sljin ✦
+        </div>
+
+</div>
     <h3>泉先</h3>
 </div>
 </a>
 
 <!-- 角色卡 3 -->
-<a href="huxue.html" class="character-link">
+<a href=".png" class="character-link">
 <div class="character-card">
     <div class="image-wrapper">
-        <img src="D.png" alt="滸阙">
-    </div>
+
+    <img src="D.png" alt="滸阙">
+
+    <div class="watermark">
+        ✦ @ Sljin ✦
+        </div>
+
+</div>
     <h3>滸阙</h3>
 </div>
 </a>
 
 
 <!-- 角色卡 4 -->
-<a href="luoliao.html" class="character-link">
+<a href=".png" class="character-link">
 <div class="character-card">
     <div class="image-wrapper">
-        <img src="C.png" alt="洛燎">
+
+    <img src="C.png" alt="洛燎">
+
+    <div class="watermark">
+        ✦ @ Sljin ✦
     </div>
+
+</div>
     <h3>洛燎</h3>
 </div>
 </a>
@@ -217,7 +243,30 @@
 
 </footer>
 
-<script src="js/script.js"></script>
+<script>
+document.querySelectorAll("img").forEach(img=>{
+    img.setAttribute("draggable","false");
+});
+
+
+document.addEventListener("keydown", function(e){
+
+    if(
+        e.ctrlKey &&
+        (
+            e.key === "c" ||
+            e.key === "u" ||
+            e.key === "s"
+        )
+    ){
+        e.preventDefault();
+    }
+
+});
+
+
+src="js/script.js">
+</script>
 
 </body>
 </html>

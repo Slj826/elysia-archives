@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>寓幽｜伊萊希亞檔案館</title>
+<title>寓幽｜伊萊希亞</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -39,11 +39,14 @@
 
 .profile-image img{
     width:300px;
-    max-width:90%;
-    border-radius:25px;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
-}
+    max-width:90vw;
 
+    border-radius:25px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    display:block;
+}
 .info-grid{
     display:grid;
     grid-template-columns:
@@ -68,6 +71,38 @@
     text-decoration:none;
 }
 
+.profile-image{
+    position:relative;
+
+    width:300px;
+    max-width:90vw;
+
+    margin:0 auto 40px;
+}
+
+.watermark{
+    position:absolute;
+
+    left:50%;
+    bottom:15px;
+
+    transform:translateX(-50%);
+
+    background:rgba(255,255,255,.75);
+
+    padding:6px 14px;
+
+    border-radius:999px;
+
+    color:#ff5fa2;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    pointer-events:none;
+}
+
 </style>
 
 </head>
@@ -81,7 +116,7 @@
 <p>小公主</p>
 
 <a href="index.html" class="back-button">
-返回檔案館
+返回
 </a>
 
 </header>
@@ -89,7 +124,13 @@
 <section class="profile">
 
 <div class="profile-image">
+
     <img src="A.png" alt="寓幽">
+
+    <div class="watermark">
+        ✦ @ Sljin ✦
+    </div>
+
 </div>
 
 <div class="info-grid">
@@ -155,7 +196,7 @@
 
 <section class="character-links">
 
-<a href="yuyou-design.html">
+<a href="A-服.html">
 服裝設計
 </a>
 
@@ -175,6 +216,18 @@
 </footer>
 
 </section>
+
+<script>
+
+document.addEventListener("contextmenu", function(e){
+    e.preventDefault();
+});
+
+document.querySelectorAll("img").forEach(img=>{
+    img.setAttribute("draggable","false");
+});
+
+</script>
 
 </body>
 </html>
