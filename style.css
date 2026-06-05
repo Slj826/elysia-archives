@@ -41,29 +41,7 @@ nav{
 margin-top:30px;
 }
 
-nav a{
-    text-decoration:none;
 
-    padding:12px 24px;
-
-    background:white;
-
-    border-radius:999px;
-
-    color:#ff5fa2;
-
-    white-space:nowrap;
-
-    transition:0.3s ease;
-}
-
-nav a:hover{
-    transform:translateY(-3px);
-
-    box-shadow:0 5px 15px rgba(255,95,162,.25);
-
-    background:#fff0f7;
-}
 
 .hero{
     min-height:400px;
@@ -358,22 +336,6 @@ section{
    寓幽角色頁
 ========================= */
 
-.yuyou-header{
-    text-align:center;
-    padding:60px 20px;
-    background:#FFD6E8;
-}
-
-.yuyou-header h1{
-    color:#ff5fa2;
-    font-size:48px;
-}
-
-.yuyou-header p{
-    margin-top:10px;
-    color:#666;
-}
-
 .profile{
     max-width:1000px;
     margin:auto;
@@ -409,13 +371,10 @@ section{
 
 .info-card{
     background:white;
-
     padding:25px;
-
     border-radius:20px;
-
-    box-shadow:
-    0 5px 20px rgba(0,0,0,.08);
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    min-height:220px;
 }
 
 .back-button{
@@ -451,32 +410,21 @@ section{
     margin-bottom:20px;
 }
 
-.character-links-top a{
-    text-decoration:none;
 
-    background:white;
-
-    color:#ff5fa2;
-
-    padding:12px 24px;
-
-    border-radius:999px;
-
-    transition:.3s;
-}
-
-.character-links-top a:hover{
-    transform:translateY(-3px);
-
-    box-shadow:
-    0 5px 15px rgba(255,95,162,.25);
-}
 
 .yuyou-page{
     background: linear-gradient(
         180deg,
         #ffecf4 10%,
         #fbf7f9 100%
+    );
+}
+
+.quanxian-page{
+    background: linear-gradient(
+        180deg,
+        #fcbdd7 10%,
+        #d6a4f7 100%
     );
 }
 
@@ -509,28 +457,7 @@ section{
     margin-bottom:20px;
 }
 
-.design-nav a{
-    text-decoration:none;
 
-    background:white;
-
-    color:#ff5fa2;
-
-    padding:12px 24px;
-
-    border-radius:999px;
-
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
-
-    transition:.3s;
-}
-
-.design-nav a:hover{
-    transform:translateY(-3px);
-
-    box-shadow:
-    0 5px 15px rgba(255,95,162,.25);
-}
 
 .design-gallery{
     display:flex;
@@ -594,4 +521,35 @@ section{
 
 .full-watermark span{
     transform:rotate(-25deg);
+}
+
+.archive-header{
+    background:#FFD6E8;
+
+    height:380px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    padding:50px 40px 20px;
+
+    text-align:center;
+
+    margin-bottom:40px;
+}
+.pink-button{
+    text-decoration:none;
+    background:white;
+    color:#ff5fa2;
+    padding:12px 24px;
+    border-radius:999px;
+    display:inline-block;
+    transition:.3s;
+}
+
+.pink-button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 5px 15px rgba(255,95,162,.25);
 }
