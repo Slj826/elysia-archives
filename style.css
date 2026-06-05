@@ -16,7 +16,7 @@ header{
 }
 
 body{
-    background:#f7e0f0;
+    background:#FFF9FD;
     font-family:"LXGW WenKai", serif;
     color:#555;
 }
@@ -154,17 +154,6 @@ footer{
  text-align:center;
 }
 
-.gallery-grid img{
- width:100%;
- border-radius:20px;
-}
-
-footer{
- background:#FFD6E8;
- padding:40px;
- text-align:center;
-}
-
 @media (max-width: 768px){
 
 .logo{
@@ -205,19 +194,6 @@ p{
     margin-bottom:20px;
 }
 
-.card{
-    background:white;
-
-    padding:35px;
-
-    border-radius:25px;
-
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
-
-    max-width:900px;
-
-    margin:auto;
-}
 
 .card{
     background:white;
@@ -376,4 +352,246 @@ section{
         opacity:1;
         transform:translateY(0);
     }
+}
+
+/* =========================
+   寓幽角色頁
+========================= */
+
+.yuyou-header{
+    text-align:center;
+    padding:60px 20px;
+    background:#FFD6E8;
+}
+
+.yuyou-header h1{
+    color:#ff5fa2;
+    font-size:48px;
+}
+
+.yuyou-header p{
+    margin-top:10px;
+    color:#666;
+}
+
+.profile{
+    max-width:1000px;
+    margin:auto;
+}
+
+.profile-image{
+    position:relative;
+
+    width:300px;
+    max-width:90vw;
+
+    margin:0 auto 40px;
+}
+
+.profile-image img{
+    width:100%;
+    display:block;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.08);
+}
+
+.info-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+}
+
+.info-card{
+    background:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.08);
+}
+
+.back-button{
+    text-decoration:none;
+
+    background:white;
+
+    color:#ff5fa2;
+
+    padding:12px 24px;
+
+    border-radius:999px;
+
+    display:inline-block;
+
+    transition:.3s;
+}
+
+.back-button:hover{
+    transform:translateY(-3px);
+}
+
+.character-links-top{
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin-top:25px;
+    margin-bottom:20px;
+}
+
+.character-links-top a{
+    text-decoration:none;
+
+    background:white;
+
+    color:#ff5fa2;
+
+    padding:12px 24px;
+
+    border-radius:999px;
+
+    transition:.3s;
+}
+
+.character-links-top a:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 5px 15px rgba(255,95,162,.25);
+}
+
+.yuyou-page{
+    background: linear-gradient(
+        180deg,
+        #ffecf4 10%,
+        #fbf7f9 100%
+    );
+}
+
+.quote-box{
+    max-width:700px;
+    margin:30px auto;
+
+    padding:20px;
+
+    background:white;
+
+    border-radius:20px;
+
+    color:#C97B9F;
+
+    font-style:italic;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.design-nav{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+
+    margin-top:25px;
+    margin-bottom:20px;
+}
+
+.design-nav a{
+    text-decoration:none;
+
+    background:white;
+
+    color:#ff5fa2;
+
+    padding:12px 24px;
+
+    border-radius:999px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.design-nav a:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 5px 15px rgba(255,95,162,.25);
+}
+
+.design-gallery{
+    display:flex;
+    flex-direction:column;
+    gap:50px;
+}
+
+.design-item{
+    display:flex;
+    gap:40px;
+    align-items:flex-start;
+    flex-wrap:wrap;
+}
+
+.design-image{
+    position:relative;
+    flex:0 0 350px;
+}
+
+.design-image img{
+    width:350px;
+    height:auto;
+    display:block;
+    border-radius:20px;
+}
+
+.design-text{
+    flex:1;
+    min-width:300px;
+}
+
+.design-text h4{
+    color:#ff5fa2;
+    margin-bottom:15px;
+    font-size:22px;
+}
+
+.design-text p{
+    line-height:2;
+    color:#666;
+}
+
+.full-watermark{
+    position:absolute;
+    inset:0;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(4,1fr);
+
+    place-items:center;
+
+    font-size:16px;
+    font-weight:700;
+
+    color:#000;
+    opacity:.12;
+
+    pointer-events:none;
+}
+
+.full-watermark span{
+    transform:rotate(-25deg);
 }
