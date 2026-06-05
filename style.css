@@ -423,10 +423,27 @@ section{
 .quanxian-page{
     background: linear-gradient(
         180deg,
-        #fcbdd7 10%,
-        #d6a4f7 100%
+        #f7d6dc 30%,
+        #e3bdfc 100%
     );
 }
+
+.huque-page{
+    background: linear-gradient(
+        180deg,
+        #c0d5ff 10%,
+        #c0d5ff 100%
+    );
+}
+
+.luoliao-page{
+    background: linear-gradient(
+        180deg,
+        #ffb5b5 10%,
+        #ffb5b5 100%
+    );
+}
+
 
 .quote-box{
     max-width:700px;
