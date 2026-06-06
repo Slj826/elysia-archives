@@ -543,7 +543,7 @@ section{
 .archive-header{
     background:#FFD6E8;
 
-    height:380px;
+    min-height:380px;
 
     display:flex;
     flex-direction:column;
@@ -600,3 +600,118 @@ nav{
     transform:translateY(-3px);
     box-shadow:0 5px 15px rgba(167, 48, 98, 0.25);
 }
+
+/* 圖片放大 */
+
+
+.zoom-overlay.show{
+    opacity:1;
+    visibility:visible;
+}
+
+.zoom-overlay img{
+    max-width:90vw;
+    max-height:90vh;
+
+    border-radius:20px;
+
+    box-shadow:0 0 40px rgba(255,255,255,.15);
+}
+
+.zoom-img{
+    cursor:pointer;
+}
+
+
+/* ===== 時間線 ===== */
+
+.timeline{
+    max-width:700px;
+    margin:auto;
+}
+
+.timeline-item{
+    background:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.08);
+}
+
+.timeline-item h3{
+    color:#ff5fa2;
+    margin-bottom:10px;
+}
+
+.timeline-arrow{
+    text-align:center;
+
+    font-size:40px;
+
+    color:#ff8cbc;
+
+    margin:15px 0;
+}
+
+.relationship-list{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.relationship-card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.relationship-card summary{
+    list-style:none;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:15px 20px;
+    cursor:pointer;
+}
+
+.relationship-card summary::-webkit-details-marker{
+    display:none;
+}
+
+.relationship-card summary::after{
+    content:"▶";
+    margin-left:auto;
+    color:#FF8CB7;
+    transition:.3s;
+}
+
+.relationship-card[open] summary::after{
+    transform:rotate(90deg);
+}
+
+.relationship-card img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid #FFD6E8;
+}
+
+.relationship-card span{
+    font-size:1.1rem;
+    font-weight:bold;
+    color:#666;
+}
+
+.relationship-content{
+    padding:0 20px 20px;
+    color:#666;
+    line-height:1.8;
+}
+
