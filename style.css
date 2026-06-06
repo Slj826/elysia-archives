@@ -570,3 +570,33 @@ section{
     transform:translateY(-3px);
     box-shadow:0 5px 15px rgba(255,95,162,.25);
 }
+
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+}
+
+.archive-header nav{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:20px;
+}
+
+.white-button{
+    text-decoration:none;
+    background:#ff9cc9;
+    color:#ffffff;
+    padding:12px 24px;
+    border-radius:999px;
+    display:inline-block;
+    transition:.3s;
+}
+
+.white-button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 5px 15px rgba(167, 48, 98, 0.25);
+}
