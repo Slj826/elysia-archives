@@ -422,69 +422,35 @@ Story Archive
 
 <footer>
 
-<p>Sljin</p>
+<p>@ Sljin</p>
 
 <p>© 2026 Elysia</p>
 
 </footer>
 
 <script>
+document.querySelectorAll("img").forEach(img=>{
+    img.setAttribute("draggable","false");
+});
 
-window.onload = function() {
-history.replaceState(
-null,
-null,
-window.location.pathname
-);
-};
 
-</script>
+document.addEventListener("keydown", function(e){
 
-<script>
-
-const cards =
-document.querySelectorAll(".character-card");
-
-cards.forEach(card => {
-
-    card.addEventListener("mouseenter", () => {
-        card.style.transform = "translateY(-8px)";
-    });
-
-    card.addEventListener("mouseleave", () => {
-        card.style.transform = "translateY(0px)";
-    });
+    if(
+        e.ctrlKey &&
+        (
+            e.key === "c" ||
+            e.key === "u" ||
+            e.key === "s"
+        )
+    ){
+        e.preventDefault();
+    }
 
 });
 
-window.onload = function() {
 
-    history.replaceState(
-        null,
-        null,
-        window.location.pathname
-    );
-
-    document
-    .querySelectorAll(".full-watermark")
-    .forEach(watermark => {
-
-        for(let i = 0; i < 50; i++){
-
-            const span =
-            document.createElement("span");
-
-            span.textContent =
-            "✦ @Sljin ✦";
-
-            watermark.appendChild(span);
-
-        }
-
-    });
-
-};
-
+src="js/script.js"
 </script>
 
 </body>
