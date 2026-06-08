@@ -19,3 +19,18 @@ window.onload = function() {
         window.location.pathname
     );
 };
+
+window.addEventListener("load",()=>{
+
+    setTimeout(()=>{
+
+        document.body.classList.remove("intro-lock");
+
+        document.getElementById("intro-screen").remove();
+
+        document.querySelector(".page-content")
+        .classList.add("show");
+
+    },5000);
+
+});
