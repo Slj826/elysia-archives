@@ -1,36 +1,48 @@
-const cards =
-document.querySelectorAll(".character-card");
+const params =
+new URLSearchParams(window.location.search);
 
-cards.forEach(card => {
+const playIntro =
+params.get("intro");
 
-card.addEventListener("mouseenter", () => {
-    card.style.transform = "translateY(-8px)";
-});
+const introScreen =
+document.getElementById("intro-screen");
 
-card.addEventListener("mouseleave", () => {
-    card.style.transform = "translateY(0px)";
-});
+if(playIntro && introScreen){
 
-});
-window.onload = function() {
-    history.replaceState(
-        null,
-        null,
-        window.location.pathname
-    );
-};
+    document.body.classList.add("intro-lock");
 
-window.addEventListener("load",()=>{
+    window.addEventListener("load",()=>{
 
-    setTimeout(()=>{
+        setTimeout(()=>{
 
-        document.body.classList.remove("intro-lock");
+            introScreen.remove();
 
-        document.getElementById("intro-screen").remove();
+            document.body.classList.remove("intro-lock");
 
-        document.querySelector(".page-content")
-        .classList.add("show");
+            const pageContent =
+            document.querySelector(".page-content");
 
-    },5000);
+            if(pageContent){
+                pageContent.classList.add("show");
+            }
 
-});
+        },5000);
+
+    });
+
+}else{
+
+    if(introScreen){
+        introScreen.remove();
+    }
+
+    document.body.classList.remove("intro-lock");
+
+    const pageContent =
+    document.querySelector(".page-content");
+
+    if(pageContent){
+        pageContent.classList.add("show");
+    }
+
+}

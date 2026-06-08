@@ -754,23 +754,23 @@ nav{
     background:
     linear-gradient(
         90deg,
-        transparent,
+        #ffd6e8,
         white,
-        #ffd6e8
+        transparent
     );
 
     box-shadow:
         0 0 10px white,
         0 0 20px white;
         
-    transform:rotate(40deg);
+        transform:rotate(35deg);
 
     opacity:0;
 }
 
 .star1{
     top:10%;
-    left:-300px;
+    left:-400px;
 
     animation:shoot1 1.3s ease-out forwards;
 }
@@ -789,44 +789,43 @@ nav{
 
 @keyframes shoot1{
     from{
-        left:-300px;
-        top:-100px;
+        left:-10%;
+        top:15%;
         opacity:1;
     }
 
     to{
-        left:120%;
-        top:80%;
+        left:80%;
+        top:75%;
         opacity:0;
     }
 }
 
-@keyframes shoot2{
 
+@keyframes shoot2{
     from{
-        left:-300px;
-        top:5%;
+        left:5%;
+        top:0%;
         opacity:1;
     }
 
     to{
-        left:120%;
-        top:95%;
+        left:95%;
+        top:70%;
         opacity:0;
     }
-
 }
 
 @keyframes shoot3{
     from{
-        left:-300px;
-        top:-20%;
+        left:-5%;
+        top:25%;
         opacity:1;
     }
 
     to{
-        left:120%;
-        top:70%;
+        left:85%;
+        top:85%;
         opacity:0;
     }
 }
