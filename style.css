@@ -598,11 +598,6 @@ nav{
     font-family:"LXGW WenKai", serif;
 }
 
-.white-button:hover{
-    transform:translateY(-3px);
-    box-shadow:0 5px 15px rgba(167, 48, 98, 0.25);
-}
-
 /* =========================
    quanxian
 ========================= */
@@ -1450,7 +1445,7 @@ nav{
     position:absolute;
 
     top:42%;
-    left:55%;
+    left:50%;
 
     width:320px;
 
@@ -1504,7 +1499,7 @@ nav{
     position:absolute;
 
     top:42%;
-    left:52%;
+    left:50%;
 
     transform:translate(-50%,-50%);
 
