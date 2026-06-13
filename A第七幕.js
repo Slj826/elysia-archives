@@ -3,70 +3,45 @@ const chapter1 = [
 {
 bg:"王城.png",
 speaker:"旁白",
-text:"而另一边。"
-},
-
-{
-bg:"王城.png",
-speaker:"篁",
-text:"她一个人在外面。"
-},
-
-
-{
-bg:"王城.png",
-speaker:"篁",
-text:"不安全。"
+text:"十九岁。"
 },
 
 {
 bg:"王城.png",
 speaker:"旁白",
-text:"于是，王子做了一个愚蠢的决定。"
+text:"王国只剩下她。"
+},
+
+
+{
+bg:"王城.png",
+speaker:"大臣",
+text:"请陛下登基。"
 },
 
 {
 bg:"王城.png",
 speaker:"旁白",
-text:"他没有带护卫。"
+text:"她抬起头。"
 },
 
 {
 bg:"王城.png",
 speaker:"旁白",
-text:"也没有通知任何人。"
+text:"没有人再替她做选择了。"
 },
 
 {
 bg:"王城.png",
-speaker:"旁白",
-text:"也没有通知任何人。"
+speaker:"寓幽",
+text:"……"
 },
 
 {
 bg:"王城.png",
-speaker:"旁白",
-text:"他去找她了。"
-},
-
-{
-bg:"王城.png",
-speaker:"旁白",
-text:"三天后。"
-},
-
-{
-bg:"王城.png",
-speaker:"旁白",
-text:"他失踪了。"
-},
-
-{
-bg:"王城.png",
-speaker:"老虎",
-text:"终于等到王室分裂的机会了。"
+speaker:"寓幽",
+text:"我明白了。"
 }
-
 
 ];
 

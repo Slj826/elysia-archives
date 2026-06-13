@@ -3,70 +3,45 @@ const chapter1 = [
 {
 bg:"王城.png",
 speaker:"旁白",
-text:"而另一边。"
+text:"直到那个孩子出生。"
 },
 
 {
 bg:"王城.png",
-speaker:"篁",
-text:"她一个人在外面。"
+speaker:"侍臣",
+text:"若是继承问题重新评估……"
 },
 
 
 {
 bg:"王城.png",
-speaker:"篁",
-text:"不安全。"
-},
-
-{
-bg:"王城.png",
-speaker:"旁白",
-text:"于是，王子做了一个愚蠢的决定。"
+speaker:"大臣",
+text:"或许更适合的是那位新生的王子。"
 },
 
 {
 bg:"王城.png",
 speaker:"旁白",
-text:"他没有带护卫。"
+text:"她第一次意识到。"
 },
 
 {
 bg:"王城.png",
 speaker:"旁白",
-text:"也没有通知任何人。"
+text:"“属于自己”的东西，是可以被替代的。"
 },
 
 {
 bg:"王城.png",
-speaker:"旁白",
-text:"也没有通知任何人。"
+speaker:"寓幽",
+text:"……"
 },
 
 {
 bg:"王城.png",
-speaker:"旁白",
-text:"他去找她了。"
-},
-
-{
-bg:"王城.png",
-speaker:"旁白",
-text:"三天后。"
-},
-
-{
-bg:"王城.png",
-speaker:"旁白",
-text:"他失踪了。"
-},
-
-{
-bg:"王城.png",
-speaker:"老虎",
-text:"终于等到王室分裂的机会了。"
+speaker:"寓幽",
+text:"原来……是这样啊。"
 }
-
 
 ];
 
